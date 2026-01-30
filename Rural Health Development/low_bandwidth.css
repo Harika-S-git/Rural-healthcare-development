@@ -1,0 +1,39 @@
+/* Sidebar Text Color Update - All Black */
+[data-testid="stSidebar"] * {
+    color: #000000 !important;  /* Force black text for all elements */
+}
+
+/* Sidebar header exception (keep white text on blue background) */
+[data-testid="stSidebar"] .st-emotion-cache-1oe5cao,
+[data-testid="stSidebar"] .st-emotion-cache-1oe5cao * {
+    color: #ffffff !important;
+}
+
+/* Sidebar checkbox - ensure checkmark remains visible */
+[data-testid="stSidebar"] .stCheckbox .st-emotion-cache-1j4319 {
+    color: #000000 !important;
+}
+
+/* Keep existing sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #e9ecef;
+    border-right: 1px solid #dee2e6;
+}
+
+[data-testid="stSidebar"] .st-emotion-cache-1oe5cao {
+    background-color: #0d6efd;
+    padding: 1rem;
+    margin: -1rem -1rem 1rem -1rem;
+}
+
+/* Hover states */
+[data-testid="stSidebar"] .st-emotion-cache-1c7y2kd:hover {
+    background-color: #dee2e6;
+}
+
+/* Active/selected item */
+[data-testid="stSidebar"] .st-emotion-cache-1c7y2kd:active,
+[data-testid="stSidebar"] .st-emotion-cache-1c7y2kd:focus {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+}
